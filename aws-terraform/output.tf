@@ -7,13 +7,3 @@ output "bucket_arn" {
   description = "ARN of the S3 bucket"
   value       = aws_s3_bucket.this.arn
 }
-
-output "bucket_region" {
-  description = "Region the bucket lives in"
-  value       = aws_s3_bucket.this.region
-}
-
-output "bucket_domain_name" {
-  description = "Bucket domain name"
-  value       = aws_s3_bucket.this.bucket_domain_name
-}
